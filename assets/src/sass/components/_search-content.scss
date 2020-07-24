@@ -1,0 +1,11 @@
+.search-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+@media screen and (min-width: $md) {
+  .search-content {
+    flex-direction: row;
+  }
+}

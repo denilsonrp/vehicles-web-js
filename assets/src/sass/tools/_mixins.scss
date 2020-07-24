@@ -1,0 +1,40 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+  -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+  -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+  box-shadow: $horizontal $vertical $blur $spread $color;
+}
+
+@mixin transition($property, $duration, $function: ease-in-out) {
+	-webkit-transition: $property $duration $function;
+  -moz-transition: $property $duration $function;
+  transition: $property $duration $function;
+}
+ 
+@mixin rotate($deg) {  
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+	transform: rotate($deg);
+}
+
+@mixin transform($value) {
+  -moz-transform: $value;
+  -webkit-transform: $value;
+  transform: $value;
+}
+
+@mixin font-face($font, $url) {  
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$url}.eot');
+  src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+       url('#{$url}.woff') format('woff'),
+       url('#{$url}.ttf') format('truetype'),
+       url('#{$url}.svg#svgFontName') format('svg');
+}

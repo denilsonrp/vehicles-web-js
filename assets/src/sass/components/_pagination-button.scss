@@ -1,0 +1,20 @@
+.pagination-button {
+  align-items: center;
+  background: #cccccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-left: 5px;
+  width: 40px;
+
+  &:hover {
+    opacity: .9;
+  }
+
+  &[disabled] {
+    background: $light-gray;
+    cursor: default;
+  }
+}

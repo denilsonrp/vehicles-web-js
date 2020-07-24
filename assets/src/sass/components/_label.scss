@@ -1,0 +1,7 @@
+.label {
+  margin-bottom: 8px;
+
+  ~ label {
+    margin-top: 16px;
+  }
+}

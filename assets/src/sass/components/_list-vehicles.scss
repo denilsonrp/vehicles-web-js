@@ -1,0 +1,26 @@
+.list-vehicles {
+
+  li {
+    align-items: center;
+    background-color: $white;
+    border: 1px solid $light-gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+
+    &:nth-child(2n) {
+      background-color: $light-gray;
+    }
+
+    h3 {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 5px;
+      }   
+    }
+  }
+}

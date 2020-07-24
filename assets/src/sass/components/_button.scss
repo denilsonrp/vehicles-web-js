@@ -1,0 +1,36 @@
+.button {
+  align-self: center;
+  align-items: center;
+  background: $dark-blue;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 16px;
+  margin-left: 16px;
+  max-width: 180px;
+  padding: 12px 16px;
+
+  @include transition(opacity, .5s);
+  @include border-radius(4px);
+
+  &:hover {
+    opacity: .9;
+  }
+
+  &.-error {
+    background: $red;
+  }
+
+  .fa {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .button {
+    align-self: flex-end;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,39 @@
+._none {
+  display: none !important;
+}
+
+._flex {
+  display: flex;
+}
+
+._flex-end {
+  justify-content: flex-end;
+}
+
+._align-center {
+  align-items: center;
+}
+
+._justify-center {
+  justify-content: center;
+}
+
+._space-between {
+  justify-content: space-between;
+}
+
+._center {
+  text-align: center;
+}
+
+._margin-l-16 {
+  margin-left: 16px;
+}
+
+._margin-b-24 {
+  margin-bottom: 24px;
+}
+
+._margin-t-16 {
+  margin-top: 16px !important;
+}

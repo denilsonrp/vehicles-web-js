@@ -1,0 +1,22 @@
+// size
+$font-size-base: 16px;
+
+// family
+$font-family-base: 'Open Sans', sans-serif;
+
+// path
+$font-family-base-path: '../fonts/Roboto-Regular';
+
+// font-face
+/*
+@font-face {
+  font-family: $font-family-base;
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-family-base-path}.eot'),
+       url('#{$font-family-base-path}.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-family-base-path}.woff') format('woff'),
+       url('#{$font-family-base-path}.ttf') format('truetype'),
+       url('#{$font-family-base-path}.svg#svgFontName') format('svg');
+}
+*/

@@ -1,0 +1,53 @@
+.modal {
+  background: rgba(0, 0, 0, .25);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  transition: top .25s;
+  top: 0;
+  width: 100%;
+
+  &.-hidden {
+    top: -100%;
+  }
+
+  .close-button {
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+  }
+
+  .content {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    max-width: 90%;
+    padding: 20px;
+    position: relative;
+    top: 60px;
+
+    @include border-radius(4px);
+
+    .title {
+      border-bottom: 1px solid $light-gray;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .modal {
+
+    .content {
+      left: 50%;
+      max-width: 520px;
+
+      @include transform(translateX(-50%));
+    }
+  }
+}

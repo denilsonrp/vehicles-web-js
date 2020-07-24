@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+<head>
+  <title>Catálogo de veículos</title>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store">
+  <meta http-equiv="Pragma" content="no-cache, no-store">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="author" content="Denilson Raimundo <denilsonraimundo10@gmail.com>">
+  <meta name="copyright" content="© Denilson Raimundo">
+  <meta name="url" content="">
+  <meta name="description" content="Catálogo de veículos">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Catálogo de veículos">
+  <meta property="og:description" content="Catálogo de veículos">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:locale" content="pt-br">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./public/dist/css/commonstyle.bundle.min.css">
+</head>
+<body>
+
+  <img src="./assets/src/images/logo.svg" alt="Logo" style="display: block; margin: 24px auto 0;" width="200" />
+
+  <div class="search-content">
+    <input class="input" type="text" name="input-search" id="input-search" placeholder="Buscar veículo por nome" data-searched="">
+
+    <button type="button" class="button" id="btn-search"><i class="fa fa-search"></i> Buscar</button>
+    <button type="button" class="button" id="btn-new-vehicle"><i class="fa fa-plus"></i> Adicionar</button>
+  </div>
+
+  <main class="main-content" id="main">
+
+    <div class="card">
+      <ul id="list-vehicles" class="list-vehicles" data-current-page="1" data-total-pages=""></ul>
+
+      <div class="_flex _flex-end _margin-t-16">
+        <button class="pagination-button" id="pagination-first"><i class="fa fa-angle-double-left"></i></button>
+        <button class="pagination-button" id="pagination-previous"><i class="fa fa-angle-left"></i></button>
+        <button class="pagination-button" id="pagination-next"><i class="fa fa-angle-right"></i></button>
+        <button class="pagination-button" id="pagination-last"><i class="fa fa-angle-double-right"></i></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="">
+        <h3 class="_margin-b-24" id="vehicle-name">-</h3>
+
+        <h4>Marca</h4>
+        <p class="_margin-b-24" id="vehicle-brand">-</p>
+
+        <h4>Ano</h4>
+        <p class="_margin-b-24" id="vehicle-year">-</p>
+
+        <h4>Descrição</h4>
+        <p class="_margin-b-24" id="vehicle-description">-</p>
+      </div>
+
+      <div class="_flex _justify-center">
+        <button type="button" class="button -error _margin-t-16" id="btn-delete-vehicle" data-index=""><i class="fa fa-trash"></i> Deletar</button>
+        <button type="button" class="button _margin-t-16" id="btn-edit-vehicle" data-index=""><i class="fa fa-edit"></i> Editar</button>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="modal" class="modal -hidden">
+    <div class="content">
+      <h3 class="title">Detalhes</h3>
+
+      <button class="close-button" id="btn-close-modal">X Fechar</button>
+
+      <input class="input _none" type="text" name="input-id" id="input-id" placeholder="">
+
+      <label class="label" for="input-vehicle">Veículo *</label>
+      <input class="input" type="text" name="input-vehicle" id="input-vehicle" placeholder="Veículo">
+
+      <label class="label" for="input-brand">Marca *</label>
+      <input class="input" type="text" name="input-brand" id="input-brand" placeholder="Marca">
+
+      <label class="label" for="input-year">Ano *</label>
+      <input class="input" type="number" name="input-year" id="input-year" placeholder="Ano">
+
+      <label class="label" for="input-description">Descrição</label>
+      <textarea class="input" name="input-description" id="input-description" placeholder="Descrição" rows="5" style="resize: none;"></textarea>
+
+      <p class="_margin-t-16 _flex _none" id="label-sold"><i class="fa fa-1_5x fa-check-circle -blue" style="margin-right: 5px;"></i> Vendido</p>
+
+      <p id="error-msg" class="_margin-t-16 -font-sm -red _none">Ocorreu um erro no envio do formulário, revise os valores digitados e tente novamente. Campos com * são obrigatórios.</p>
+
+      <button type="button" class="button _margin-t-16" id="btn-submit-form"><i class="fa fa-save"></i> Salvar</button>
+    </div>
+  </div>
+
+	<script src="./public/dist/js/index.bundle.min.js"></script>
+</body>
+</html>
