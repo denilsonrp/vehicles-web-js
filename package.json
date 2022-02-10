@@ -20,7 +20,7 @@
     "file-loader": "^2.0.0",
     "jsonminify": "^0.4.1",
     "mini-css-extract-plugin": "^0.4.2",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
